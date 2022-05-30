@@ -1,11 +1,29 @@
 <div align="center">
   
-### Welcome 👋
-<div style="display: inline_block"><br>
+# Welcome 👨🏻‍💻
+ 
   
+###  I Like 🤙🏻
+   </div>
+  
+  
+#### 1 &nbsp;-> Solve Problems &nbsp;😎 &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4  &nbsp;->Mobile DEV &nbsp;📱
+#### 2 &nbsp;->  Manipulate Data  &nbsp;🗄&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5 &nbsp; ->Game DEV  &nbsp;👨🏻‍💻
+#### 3 &nbsp;->  PC DEV  &nbsp;💻&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  6 &nbsp;->Music  &nbsp; 🎶 
+#### &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  7 &nbsp;-> Console DEV📟
 
+<br>
+<br>
 <div align="center">
   
+##  Technologies That I Already Worked
+  </div>
+  
+<div style="display: inline_block"><br>
+
+
+<div align="center">
+
 <div style="display: inline_block"><br>
   
   <img align="center" alt="GabrielLuiz-C" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-plain.svg">
