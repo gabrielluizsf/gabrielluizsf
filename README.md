@@ -3,25 +3,25 @@
 # Welcome 👨🏻‍💻
  </div>
   
-###  I Like it 🤙🏻
+##  I Like it 🤙🏻
    
   
   
-#### 1 &nbsp;-> Solve Problems &nbsp;😎&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-#### 2 &nbsp;->  Manipulate Data  &nbsp;🗄&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-#### 3 &nbsp;->  PC DEV  &nbsp;💻&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   
-#### 4  &nbsp;->Mobile DEV &nbsp;📱
-#### 6 &nbsp;->Music  &nbsp;🎸🎶🎵 🎶
-#### 5 &nbsp; ->Game DEV  &nbsp;💻📱
+- 1 &nbsp;-> Solve Problems &nbsp;😎&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+- 2 &nbsp;->  Backend DEV  &nbsp;🗄&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+- 3 &nbsp;->  PC DEV  &nbsp;💻&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;   
+- 4  &nbsp;->Mobile DEV &nbsp;📱
+- 6 &nbsp;->Music  &nbsp;🎸🎶🎵 🎶
+- 5 &nbsp; ->Game DEV  &nbsp;💻📱
 
-####  7 &nbsp;-> Console DEV📟
+-  7 &nbsp;-> Console DEV📟
 
 
 <br>
 <br>
 <div align="center">
   
-##  Technologies That I Already Worked
+###  Technologies That I Already Worked
   </div>
   
 <div style="display: inline_block"><br>
