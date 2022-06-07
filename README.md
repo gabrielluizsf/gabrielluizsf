@@ -1,7 +1,22 @@
 <div align="center">
   
 # Welcome 👨🏻‍💻
- </div>
+
+<div id="badges"  align="center">
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=63CF15&lines=If+you+fail+to+plan+you+plan+to+fail)](https://git.io/typing-svg)
+    
+  </div>
+
+<div id="badges"  align="center">
+    
+    
+![](https://komarev.com/ghpvc/?username=GabrielLuizSF)
+    <img  src="https://img.shields.io/github/followers/GabrielLuizSF?label=Follow" alt="LinkedIn Badge"/>
+    <img src="https://img.shields.io/github/stars/GabrielLuizSF?affiliations=OWNER%2CCOLLABORATOR" alt="LinkedIn Badge"/>
+    
+  </div> 
+</div>
   
 ##  I Like it 🤙🏻
    
