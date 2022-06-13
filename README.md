@@ -64,6 +64,6 @@
   ##
  
 <div> 
-  <a href="https://instagram.com/thegabrielluizsfc/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black" target="_blank"></a>
+  <a href="https://instagram.com/gabrielluiz_dev/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black" target="_blank"></a>
   </div>
  
