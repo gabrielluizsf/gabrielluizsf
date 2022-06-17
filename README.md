@@ -11,9 +11,8 @@
 <div id="badges"  align="center">
     
     
-![](https://komarev.com/ghpvc/?username=GabrielLuizSF)
-    <img  src="https://img.shields.io/github/followers/GabrielLuizSF?label=Follow" alt="LinkedIn Badge"/>
-    <img src="https://img.shields.io/github/stars/GabrielLuizSF?affiliations=OWNER%2CCOLLABORATOR" alt="LinkedIn Badge"/>
+
+
     
   </div> 
 </div>
