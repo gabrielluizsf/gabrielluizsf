@@ -7,8 +7,8 @@ function AboutPage() {
   return (
     <>
       <Head>
-        <title>| Gabriel Luiz | About</title>
-        <link rel="icon" href="/favicon.svg" />
+        <title>| About</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='max-w-2xl'>
         <div className='pb-4'>

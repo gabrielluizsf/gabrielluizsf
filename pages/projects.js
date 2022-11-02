@@ -16,8 +16,8 @@ function ProjectsPage() {
     return (
         <>
             <Head>
-                <title>| Gabriel Luiz | Projects</title>
-                <link rel="icon" href="/favicon.svg" />
+                <title>| Projects</title>
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className='max-w-2xl'>
                 <p className='text-neutral-900 dark:text-neutral-50 text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight'>Projects</p>
