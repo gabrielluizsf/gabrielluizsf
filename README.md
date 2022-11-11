@@ -11,6 +11,19 @@ I'm Gabriel Luiz,an Backend Developer 💻  from Brazil who is passionate about 
 
 Talk to me about
 
+```go
+package technologies
+
+import "fmt"
+
+func printTechnologies(){
+langs := []string{"GoLang","Javascript"}
+fmt.Println(langs);
+}
+```
+
+
+
 #### Backend development: 
 
 <div style="display: inline_block">
