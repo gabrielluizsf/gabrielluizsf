@@ -11,17 +11,6 @@ I'm Gabriel Luiz,an Backend Developer 💻  from Brazil who is passionate about 
 
 Talk to me about
 
-```go
-package technologies
-
-import "fmt"
-
-func printTechnologies(){
-langs := []string{"GoLang","Javascript"}
-fmt.Println(langs);
-}
-```
-
 
 
 #### Backend development: 
@@ -35,6 +24,25 @@ fmt.Println(langs);
   <img align="center" alt="GabrielLuiz-CockroachDB" height="30" width="40" src="https://cdn.worldvectorlogo.com/logos/cockroachdb.svg">
 
 </div>
+
+
+<br>
+<div>
+  
+```go
+package technologies
+
+import "fmt"
+
+func printTechnologies(){
+langs := []string{"GoLang","Javascript"}
+fmt.Println(langs);
+}
+```
+
+</div>
+
+
 
 
 
