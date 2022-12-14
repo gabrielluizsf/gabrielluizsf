@@ -29,16 +29,6 @@ Talk to me about
 <br>
 <div>
   
-```go
-package technologies
-
-import "fmt"
-
-func printTechnologies(){
-langs := []string{"GoLang","Javascript"}
-fmt.Println(langs);
-}
-```
 
 </div>
 
