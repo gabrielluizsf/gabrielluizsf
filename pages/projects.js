@@ -14,7 +14,6 @@ function ProjectsPage() {
             </div>
             <div>
 <p className='text-slate-800 dark:text-neutral-300 md:text-lg lg:text-xl italic py-px'>
-           is under development
           </p>
           {/*
             <Link 
@@ -23,7 +22,11 @@ function ProjectsPage() {
             className="text-neutral-700 dark:text-neutral-50 text-0.25xl md:text-1xl lg:text-2xl font-bold tracking-tight"
             >Social Network ↗ </Link>
            */}
-
+           <Link 
+            href="https://ezl.vercel.app/" 
+            target={'_blank'}
+            className="text-neutral-700 dark:text-neutral-50 text-0.25xl md:text-1xl lg:text-2xl font-bold tracking-tight"
+            >EZL Compiler ↗ </Link>
             </div>
         </>
     )
