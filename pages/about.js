@@ -38,7 +38,7 @@ function AboutPage() {
           Download CV
         </Link>
        */}
-    <a href="https://github.com/egonelbre/gophers" target="_blank">Free Gophers</a>
+    <a href="https://github.com/egonelbre/gophers" target="_blank" rel="noreferrer noopener">Free Gophers</a>
       </div>
     </>
   )
