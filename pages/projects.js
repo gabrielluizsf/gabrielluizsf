@@ -15,7 +15,7 @@ function ProjectsPage() {
             <div>
 <p className='text-slate-800 dark:text-neutral-300 md:text-lg lg:text-xl italic py-px'>
           </p>
-      <img src="https://github.com/egonelbre/gophers/raw/master/.thumb/animation/gopher-dance-long-3x.gif" alt="Gopher Dancing" className="h-48 w-48 object-center" />
+      <img src="https://github.com/egonelbre/gophers/raw/master/.thumb/animation/gopher-dance-long-3x.gif" className="h-48 w-48 object-center" />
           {/*
             <Link 
             href="https://photography-links.vercel.app/" 

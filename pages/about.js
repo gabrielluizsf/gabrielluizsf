@@ -13,7 +13,7 @@ function AboutPage() {
       <div className='max-w-2xl'>
         <div className='pb-4'>
           <p className='text-neutral-900 dark:text-neutral-50 text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight'>About </p>
-          <img src="/with-C-book.svg" alt="Gopher learn C" className="object-contain h-48 w-48" />
+          <img src="/with-C-book.svg" alt="" className="object-contain h-48 w-48" />
             <p className='text-slate-800 dark:text-neutral-300 md:text-lg lg:text-xl italic py-px'>
            is under development
            {/* 
