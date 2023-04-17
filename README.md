@@ -47,3 +47,7 @@ Talk to me about
 <a href="https://www.linkedin.com/in/gabriel-luiz-devbackend">
   <img align="left" alt="Gabriel Luiz LinkedIN" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/main/assets/linkedin.svg"/>
 </a>
+
+<a href="https://www.instagram.com/gabrielluiz_dev/">
+  <img align="left" alt="Gabriel Luiz Instagram" width="22px"  src="https://raw.githubusercontent.com/zenPidgin/instagram_svg/master/instagram.svg"/>
+</a>
