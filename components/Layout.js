@@ -3,7 +3,7 @@ import NavBar from './NavBar.js'
 
 const accounts = [
     {name: "linkedin", href:"https://www.linkedin.com/in/gabriel-luiz-devbackend/"},
-    {name: "github", href:"https://www.github.com/GabrielLuizSF"},
+    {name: "github", href:"https://www.github.com/gabrielluizsf"},
 
 ]
 
