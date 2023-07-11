@@ -69,11 +69,11 @@ Talk to me about
 
 
 <a href="https://www.linkedin.com/in/gabriel-luiz-devbackend">
-  <img align="left" alt="Gabriel Luiz LinkedIN" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/main/assets/linkedin.svg"/>
+  <img align="left" alt="Gabriel Luiz LinkedIN"  src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 <a href="https://www.instagram.com/gabrielluiz_dev/">
-  <img align="left" alt="Gabriel Luiz Instagram" width="22px"  src="https://raw.githubusercontent.com/zenPidgin/instagram_svg/master/instagram.svg"/>
+  <img align="left" alt="Gabriel Luiz Instagram"  src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
 </a>
 
 
