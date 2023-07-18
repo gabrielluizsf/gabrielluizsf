@@ -64,7 +64,6 @@ Talk to me about
 
 
 
-![Snake animation](https://github.com/GabrielLuizSF/gabrielLuizsf/blob/output/github-contribution-grid-snake.svg)
 
 
 
