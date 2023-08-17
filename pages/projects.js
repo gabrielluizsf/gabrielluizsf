@@ -5,32 +5,33 @@ function ProjectsPage() {
     return (
         <>
             <Head>
-                <title>| Projects</title>
+                <title>Projects</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='max-w-2xl'>
-                <p className='text-neutral-900 dark:text-neutral-50 text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight'>Projects</p>
-   
-            </div>
-            <div>
-<p className='text-slate-800 dark:text-neutral-300 md:text-lg lg:text-xl italic py-px'>
-          </p>
-      <img src="https://github.com/egonelbre/gophers/raw/master/.thumb/animation/gopher-dance-long-3x.gif" className="h-48 w-48 object-center" />
-          {/*
-            <Link 
-            href="https://photography-links.vercel.app/" 
-            target={'_blank'}
-            className="text-neutral-700 dark:text-neutral-50 text-0.25xl md:text-1xl lg:text-2xl font-bold tracking-tight"
-            >Social Network ↗ </Link>
-           */}
-           <Link 
-            href="https://ezl.vercel.app/" 
-            target={'_blank'}
-            className="text-neutral-700 dark:text-neutral-50 text-0.25xl md:text-1xl lg:text-2xl font-bold tracking-tight"
-            >EZL Compiler ↗ </Link>
+        
+            <div className="flex flex-col">
+                <img src="https://github.com/egonelbre/gophers/raw/master/.thumb/animation/gopher-dance-long-3x.gif" className="h-48 w-48 object-center mb-4" alt="Dancing Gopher" />  
+                <p className=" text-lg md:text-xl lg:text-2xl italic text-gray-800 dark:text-gray-300 mb-8">
+                    Welcome to My Projects Page
+                </p>
+             
+                    {/*<Link 
+                        href="https://photography-links.vercel.app/" 
+                        target="_blank"
+                        className="text-blue-500 hover:underline text-lg md:text-xl lg:text-2xl font-bold tracking-tight"
+                    >
+                        Social Network ↗
+                    </Link> */}
+                    <Link 
+                        href="https://github.com/gabrielluizsf?tab=repositories" 
+                        target="_blank"
+                        className="text-blue-500 hover:underline text-lg md:text-xl lg:text-2xl font-bold "
+                    >
+                        Repositories ↗
+                    </Link>
             </div>
         </>
     )
 }
 
-export default ProjectsPage
+export default ProjectsPage;
