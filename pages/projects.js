@@ -6,7 +6,7 @@ function ProjectsPage() {
         <>
             <Head>
                 <title>Projects</title>
-                <link rel="icon" href="/favicon.ico" />
+                <Link rel="icon" href="/favicon.ico" />
             </Head>
         
             <div className="flex flex-col">

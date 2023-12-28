@@ -8,7 +8,7 @@ function AboutPage() {
     <>
       <Head>
         <title>| About</title>
-        <link rel="icon" href="/favicon.ico" />
+        <Link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='max-w-2xl'>
         <div className='pb-4'>

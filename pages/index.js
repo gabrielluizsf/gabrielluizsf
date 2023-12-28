@@ -7,7 +7,7 @@ function HomePage() {
   return (
       <><Head>
       <title>| Home</title>
-      <link rel="icon" href="/favicon.ico" />
+      <Link rel="icon" href="/favicon.ico" />
     </Head><div className='max-w-2xl'>
         <div className='pb-4'>
           <p className='text-neutral-900 dark:text-neutral-50 text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight'>Bem Vindo(a) ao meu Portfólio</p>
