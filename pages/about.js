@@ -14,9 +14,9 @@ function AboutPage() {
         <div className='pb-4'>
           <p className='text-neutral-900 dark:text-neutral-50 text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight'>About </p>
           <img src="/with-C-book.svg" alt="" className="object-contain h-48 w-48" />
-            <p className='text-slate-800 dark:text-neutral-300 md:text-lg lg:text-xl italic py-px'>
-           is under development
-           {/* 
+          <p className='text-slate-800 dark:text-neutral-300 md:text-lg lg:text-xl italic py-px'>
+            is under development
+            {/* 
             Engineering @{'  '}
               <Link
                 rel="noreferrer" 
@@ -28,17 +28,7 @@ function AboutPage() {
            */}
           </p>
         </div>
-        {/*
-          <Link
-          rel="noreferrer"
-          download={'CV.pdf'}
-          href="/docs/cv/gabrielluiz.pdf"
-          target={'_blank'}
-          className='dark:bg-neutral-800 dark:text-neutral-50 dark:hover:bg-neutral-700/60 dark:hover:text-neutral-200 hover:bg-slate-200 hover:text-slate-600 bg-slate-100 text-slate-700 md:text-lg xl:text-xl font-medium px-4 py-2 rounded-md mb-4'>
-          Download CV
-        </Link>
-       */}
-    <a href="https://github.com/egonelbre/gophers" target="_blank" rel="noreferrer noopener">Free Gophers</a>
+        <a href="https://github.com/egonelbre/gophers" target="_blank" rel="noreferrer noopener">Free Gophers</a>
       </div>
     </>
   )
