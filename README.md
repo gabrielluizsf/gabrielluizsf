@@ -24,30 +24,23 @@ Talk to me about
   <img align="center" alt="GabrielLuiz-Golang" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg">
   </a>
   
- <a href="https://nodejs.org/en">
-  <img align="center" alt="GabrielLuiz-NodeJS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+ <a href="https://deno.com/">
+  <img align="center" alt="GabrielLuiz-Deno" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/denojs/denojs-original.svg">
  </a>
   
-  <a href="https://www.java.com/pt-BR/">
-  <img align="center" alt="GabrielLuiz-Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
+  <a href="https://www.rust-lang.org/pt-BR/">
+  <img align="center" alt="GabrielLuiz-Rust" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg">
   </a>   
- 
-  <a href="https://kotlinlang.org/">
-  <img align="center" alt="GabrielLuiz-Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg"> 
- </a>   
+
   
   <a href="https://www.mongodb.com/">
   <img align="center" alt="GabrielLuiz-MongoDB" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
   </a>
-  
-  
- <a href="https://www.mysql.com/">
-  <img align="center" alt="GabrielLuiz-MySQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
- </a>
-   
-  <a href="https://cockroachlabs.cloud/">
-  <img align="center" alt="GabrielLuiz-CockroachDB" height="30" width="40" src="https://cdn.worldvectorlogo.com/logos/cockroachdb.svg">
+
+  <a href="https://www.docker.com/">
+    <img align="center" alt="GabrielLuiz-Docker" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
   </a>
+  
     
 </div>
 
