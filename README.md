@@ -7,8 +7,6 @@
 I'm Gabriel Luiz,an Backend Developer 💻  from Brazil who is passionate about technologies and innovation
 
 
-[![Medium Badge](https://img.shields.io/badge/-Medium-000?style=flat-square&logo=Medium&logoColor=white&&link=https://medium.com/@gabrielluizsf)](https://medium.com/@gabrielluizsf)
-
 
 ### ⚡ Technologies
 
