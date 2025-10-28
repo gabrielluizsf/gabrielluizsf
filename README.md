@@ -19,24 +19,24 @@ Talk to me about
 <div style="display: inline_block">
   
 <a href="https://go.dev/">
-  <img align="center" alt="GabrielLuiz-Golang" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg">
+  <img align="center" alt="GabrielLuiz-Golang" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg">
   </a>
   
  <a href="https://deno.com/">
-  <img align="center" alt="GabrielLuiz-Deno" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/denojs/denojs-original.svg">
+  <img align="center" alt="GabrielLuiz-Deno" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/denojs/denojs-original.svg">
  </a>
   
   <a href="https://www.rust-lang.org/pt-BR/">
-  <img align="center" alt="GabrielLuiz-Rust" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg">
+  <img align="center" alt="GabrielLuiz-Rust" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg">
   </a>   
 
   
   <a href="https://www.mongodb.com/">
-  <img align="center" alt="GabrielLuiz-MongoDB" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
+  <img align="center" alt="GabrielLuiz-MongoDB" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg">
   </a>
 
   <a href="https://www.docker.com/">
-    <img align="center" alt="GabrielLuiz-Docker" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
+    <img align="center" alt="GabrielLuiz-Docker" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg">
   </a>
   
     
