@@ -62,7 +62,7 @@ Talk to me about
   <img align="left" alt="Gabriel Luiz LinkedIN"  src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
-<a href="https://www.instagram.com/gabrielluizsoaresfeitoza/">
+<a href="https://www.instagram.com/gabrielluiz.dev/">
   <img align="left" alt="Gabriel Luiz Instagram"  src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
 </a>
 
