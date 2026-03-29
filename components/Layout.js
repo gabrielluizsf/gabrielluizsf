@@ -2,9 +2,8 @@ import Footer from './Footer.js'
 import NavBar from './NavBar.js'
 
 const accounts = [
-    {name: "linkedin", href:"https://www.linkedin.com/in/gabriel-luiz-devbackend/"},
-    {name: "github", href:"https://www.github.com/GabrielLuizSF"},
-
+    {name: "linkedin", href:"https://www.linkedin.com/in/gabriel-luiz-devbackend"},
+    {name: "github", href:"https://www.github.com/gabrielluizsf"},
 ]
 
 let links = [
@@ -15,9 +14,11 @@ let links = [
 
 export default function Layout({ children }) {
     return (
-        <div className="space-y-6 px-10 md:px-20 lg:px-36 py-2 md:py-6 lg:py-16">
+        <div className="max-w-4xl mx-auto flex flex-col min-h-screen px-6 md:px-12 pt-2 pb-8">
             <NavBar links={links}/>
-            {children}
+            <main className="flex-grow flex flex-col justify-center">
+                {children}
+            </main>
             <Footer socialAccounts={accounts} />
         </div>
     )
