@@ -1,19 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-
-function ProjectCard({ title, href }) {
-    return (
-        <Link 
-            href={href} 
-            target="_blank" 
-            className="group block p-6 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-2xl hover:shadow-xl hover:border-blue-500 dark:hover:border-blue-400 transition-all"
-        >
-            <h3 className="text-xl md:text-2xl font-bold text-neutral-900 dark:text-neutral-100 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
-                {title} ↗
-            </h3>
-        </Link>
-    )
-}
+import Links from "../components/Links";
 
 function ProjectsPage() {
     return (
@@ -34,16 +21,26 @@ function ProjectsPage() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-                    <ProjectCard 
-                        title="McLaren Configurator" 
-                        href="https://gabrielluizsf.github.io/mclaren_configurator/" 
-                    />
-                    <ProjectCard 
-                        title="Repositórios GitHub" 
-                        href="https://github.com/gabrielluizsf?tab=repositories" 
-                    />
-                </div>
+
+                <Links
+                    links={[
+                        {
+                            title: "Atendi9 Open Source",
+                            href: "https://github.com/orgs/atendi9/repositories"
+                        },
+                        {
+                            title: "McLaren Configurator",
+                            href: "https://gabrielluizsf.github.io/mclaren_configurator/"
+                        },
+                        {
+                            title: "C test Library",
+                            href: "https://github.com/gabrielluizsf/assertx"
+                        },
+                        {
+                            title: "Repositórios GitHub",
+                            href: "https://github.com/gabrielluizsf?tab=repositories"
+                        }
+                    ]} />
             </div>
         </>
     )
