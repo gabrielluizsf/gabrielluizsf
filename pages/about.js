@@ -1,36 +1,69 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
-function AboutPage() {
+function ContentLink({ title, href }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer noopener"
+      className="group relative px-4 py-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:border-blue-500 hover:text-blue-500 transition-all duration-300"
+    >
+      {title}
+      <span className="inline-block ml-1 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200 text-[10px]">
+        ↗
+      </span>
+    </a>
+  )
+}
+
+export default function AboutPage() {
   return (
     <>
       <Head>
         <title>Gabriel Luiz | About</title>
-        <Link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-10 py-10'>
-        <div className='max-w-lg flex-1 text-center md:text-left'>
-          <h1 className='text-neutral-900 dark:text-neutral-50 text-4xl md:text-5xl font-extrabold tracking-tight mb-4'>
-            Sobre 
-          </h1>
-          <p className='text-slate-600 dark:text-neutral-300 md:text-lg italic mb-6'>
-            Página em desenvolvimento...
-          </p>
-          <a 
-            href="https://github.com/egonelbre/gophers" 
-            target="_blank" 
-            rel="noreferrer noopener"
-            className="inline-flex items-center font-semibold text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            Free Gophers ↗
-          </a>
+
+      <main className="max-w-4xl mx-auto px-6 py-20">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
+          
+          <div className="flex-1 space-y-6 text-center md:text-left">
+            <header>
+              <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-neutral-900 dark:text-white mb-2">
+                Sobre<span className="text-blue-500">.</span>
+              </h1>
+              <div className="h-1.5 w-20 bg-blue-500 rounded-full mx-auto md:ml-0 mb-6" />
+            </header>
+
+            <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed font-medium">
+              Sou um desenvolvedor focado em construir soluções. 
+              Atualmente, aplico minha paixão por tecnologia na empresa <span className="text-neutral-900 dark:text-neutral-100 font-bold">Atendi9</span>.
+            </p>
+
+            <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-4">
+              <ContentLink title="Atendi9" href="https://www.atendi9.com.br" />
+              <ContentLink title="Free Gophers" href="https://github.com/egonelbre/gophers" />
+            </div>
+          </div>
+
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            
+            <div className="relative flex-shrink-0 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-8 rounded-3xl shadow-2xl overflow-hidden">
+              <img 
+                src="/with-C-book.svg" 
+                alt="Gopher reading C book" 
+                className="h-48 w-48 md:h-56 md:w-56 object-contain transform group-hover:scale-105 transition-transform duration-500" 
+              />
+              
+ 
+              <div className="absolute top-0 right-0 p-4 opacity-10">
+                <code className="text-xs">fmt.Println("Hi!")</code>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div className="flex-shrink-0 bg-neutral-100 dark:bg-neutral-800 p-6 rounded-3xl">
-          <img src="/with-C-book.svg" alt="Reading" className="object-contain h-40 w-40 md:h-48 md:w-48" />
-        </div>
-      </div>
+      </main>
     </>
   )
 }
-
-export default AboutPage;
