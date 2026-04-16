@@ -1,69 +1,44 @@
-<a href="">
-
-## Hi there<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> 
-
+<a href="https://github.com/GabrielLuiz-dev">
+  <h2 align="left">Hi there <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"></h2>
 </a>
 
-I'm Gabriel Luiz,an Backend Developer 💻  from Brazil who is passionate about technologies and innovation
-
-
+<p align="left">
+  I'm Gabriel Luiz, a Backend Developer 💻 from Brazil who is passionate about technologies and innovation.
+</p>
 
 ### ⚡ Technologies
 
 Talk to me about
 
+#### Backend development:
 
-
-#### Backend development: 
-
-<div style="display: inline_block">
-  
-<a href="https://go.dev/">
-  <img align="center" alt="GabrielLuiz-Golang" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg">
+<p align="left">
+  <a href="https://go.dev/">
+    <img src="https://skillicons.dev/icons?i=go" alt="Go" />
   </a>
-  
- <a href="https://deno.com/">
-  <img align="center" alt="GabrielLuiz-Deno" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/denojs/denojs-original.svg">
- </a>
-  
-  <a href="https://www.rust-lang.org/pt-BR/">
-  <img align="center" alt="GabrielLuiz-Rust" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg">
-  </a>   
-
-  
+  <a href="https://deno.com/">
+    <img src="https://skillicons.dev/icons?i=deno" alt="Deno" />
+  </a>
+  <a href="https://www.rust-lang.org/">
+    <img src="https://skillicons.dev/icons?i=rust" alt="Rust" />
+  </a>
   <a href="https://www.mongodb.com/">
-  <img align="center" alt="GabrielLuiz-MongoDB" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg">
+    <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" />
   </a>
-
   <a href="https://www.docker.com/">
-    <img align="center" alt="GabrielLuiz-Docker" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg">
+    <img src="https://skillicons.dev/icons?i=docker" alt="Docker" />
   </a>
-  
-    
-</div>
+</p>
 
+<br />
 
-<br>
-<div>
-  
+#### Connect with me:
 
-</div>
-
-
-
-
-
-
-
-
-
-
-<a href="https://www.linkedin.com/in/gabriel-luiz-devbackend">
-  <img align="left" alt="Gabriel Luiz LinkedIN"  src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://www.instagram.com/gabrielluiz.dev/">
-  <img align="left" alt="Gabriel Luiz Instagram"  src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-</a>
-
-
+<p align="left">
+  <a href="https://www.linkedin.com/in/gabriel-luiz-devbackend">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://www.instagram.com/gabrielluiz.dev/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+</p>
