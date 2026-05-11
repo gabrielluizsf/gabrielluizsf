@@ -8,7 +8,7 @@ function NavBarItem({ link }) {
     return (
         <Link href={link.href}>
             <p className="font-mono text-sm md:text-base font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors tracking-wide">
-                {link.name}
+                {link.icon}
             </p>
         </Link>
     )

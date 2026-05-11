@@ -7,7 +7,7 @@ function FooterItem({ account }) {
             rel="noreferrer"
             target="_blank"
             className="font-mono text-sm font-medium text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-50 transition-colors tracking-wide">
-            {account.name}
+            {account.icon}
         </Link>
     )
 }

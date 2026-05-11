@@ -1,15 +1,19 @@
+import { Home, FolderGit2, User } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import Footer from './Footer.js'
 import NavBar from './NavBar.js'
 
+// Social media accounts using react-icons for brand logos
 const accounts = [
-    {name: "linkedin", href:"https://www.linkedin.com/in/gabriel-luiz-devbackend"},
-    {name: "github", href:"https://www.github.com/gabrielluizsf"},
+    {icon: <FaLinkedin size={24} />, href:"https://www.linkedin.com/in/gabriel-luiz-devbackend"},
+    {icon: <FaGithub size={24} />, href:"https://www.github.com/gabrielluizsf"},
 ]
 
+// Navigation links using lucide-react for UI icons
 let links = [
-    {name: "home", href:"/"},
-    {name: "projects", href:"/projects"},
-    {name: "about", href:"/about"}
+    {icon: <Home size={24} />, href:"/"},
+    {icon: <FolderGit2 size={24} />, href:"/projects"},
+    {icon: <User size={24} />, href:"/about"}
 ]
 
 export default function Layout({ children }) {
