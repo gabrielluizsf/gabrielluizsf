@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 
 function HomePage() {
   return (
       <>
         <Head>
           <title>Gabriel Luiz | Home</title>
-          <Link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         
         <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-10 py-10'>
@@ -26,11 +27,15 @@ function HomePage() {
           </div>
           
           <div className="flex-shrink-0">
-            <img 
-              src='https://raw.githubusercontent.com/egonelbre/gophers/master/.thumb/animation/2bit-sprite/demo.gif' 
-              alt="Gopher Animation"
-              className="w-48 md:w-64 object-contain rounded-xl shadow-sm"
-            />
+          <Image 
+            src='https://raw.githubusercontent.com/egonelbre/gophers/master/.thumb/animation/2bit-sprite/demo.gif' 
+            alt="Gopher Animation"
+            width={256}
+            height={256} 
+            unoptimized={true} 
+            className="w-48 md:w-64 object-contain rounded-xl shadow-sm"
+            priority
+          />
           </div>
         </div>
       </>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SunIcon } from '@heroicons/react/24/solid'
 import { MoonIcon } from '@heroicons/react/24/outline'
@@ -39,11 +40,14 @@ const ThemeToggler = () => {
 function NavBar({ links }) {
     return (
         <nav className="flex items-center justify-between py-4 mb-8 sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-neutral-900/70 border-b border-neutral-200 dark:border-neutral-800">
-            <Link href="/">
-                <img 
+            <Link href="/" className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border-2 border-neutral-200 dark:border-neutral-700 hover:opacity-80 transition-opacity">
+                <Image 
                     src="https://github.com/gabrielluizsf.png" 
                     alt="Gabriel Luiz" 
-                    className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-neutral-200 dark:border-neutral-700 hover:opacity-80 transition-opacity cursor-pointer object-cover" 
+                    fill
+                    sizes="(max-width: 768px) 40px, 48px"
+                    className="object-cover"
+                    priority
                 />
             </Link>
             <div className="flex items-center space-x-4 md:space-x-8">

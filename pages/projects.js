@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Links from "../components/Links";
+import Image from "next/image";
 
 function ProjectsPage() {
     return (
@@ -12,7 +13,14 @@ function ProjectsPage() {
 
             <div className="flex flex-col py-6">
                 <div className="flex items-center gap-4 mb-8">
-                    <img src="https://github.com/egonelbre/gophers/raw/master/.thumb/animation/gopher-dance-long-3x.gif" className="h-20 w-20 md:h-24 md:w-24 object-contain rounded-lg" alt="Dancing Gopher" />
+                    <Image 
+                        src="https://github.com/egonelbre/gophers/raw/master/.thumb/animation/gopher-dance-long-3x.gif" 
+                        className="h-20 w-20 md:h-24 md:w-24 object-contain rounded-lg" 
+                        width={256}
+                        height={256} 
+                        unoptimized={true} 
+                        alt="Dancing Gopher" 
+                    />
                     <div>
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-neutral-900 dark:text-neutral-50">Meus Projetos</h1>
                         <p className="text-lg text-neutral-600 dark:text-neutral-400 mt-2">
