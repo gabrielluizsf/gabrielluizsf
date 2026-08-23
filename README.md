@@ -19,6 +19,9 @@ Talk to me about
   <a href="https://deno.com/">
     <img src="https://skillicons.dev/icons?i=deno" alt="Deno" />
   </a>
+   <a href="https://nodejs.org/en">
+    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.JS" />
+  </a>
   <a href="https://www.typescriptlang.org/">
     <img src="https://skillicons.dev/icons?i=typescript" alt="Typescript" />
   </a>
