@@ -19,8 +19,8 @@ Talk to me about
   <a href="https://deno.com/">
     <img src="https://skillicons.dev/icons?i=deno" alt="Deno" />
   </a>
-  <a href="https://www.rust-lang.org/">
-    <img src="https://skillicons.dev/icons?i=rust" alt="Rust" />
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://skillicons.dev/icons?i=typescript" alt="Typescript" />
   </a>
   <a href="https://www.mongodb.com/">
     <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" />
