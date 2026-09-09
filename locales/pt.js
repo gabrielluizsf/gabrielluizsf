@@ -1,0 +1,91 @@
+const pt = {
+  meta: {
+    homeTitle: "Gabriel Luiz",
+    aboutTitle: "Sobre",
+    projectsTitle: "Projetos",
+  },
+  home: {
+    hero: "Desenvolvedor Backend construindo sistemas resilientes, APIs escaláveis e serviços de alta performance.",
+    projectsBtn: "projetos",
+    aboutBtn: "sobre-mim",
+  },
+  about: {
+    heading: "Sobre mim",
+    bio: "Sou um desenvolvedor focado em construir soluções robustas e escaláveis de backend, especializado em ecossistemas de alta performance, arquiteturas limpas e automação.",
+    workExperience: "// Experiência Profissional",
+    experiences: [
+      {
+        company: "Atendi9",
+        role: "Desenvolvedor",
+        period: "abr de 2026 – set de 2026 · 6 meses",
+        location: "Caruaru, Pernambuco, Brasil (Híbrido)",
+        skills: [
+          "Go (Golang)",
+          "Node.js",
+          "API REST",
+          "WebSockets",
+          "MongoDB",
+          "PostgreSQL",
+          "Docker",
+          "Heroku",
+          "Linux",
+          "Cloudflare R2",
+          "Firebase",
+          "OpenAI API",
+          "Asaas API",
+          "Revisão de Código",
+        ],
+        description: [
+          "Arquitetei e desenvolvi um ecossistema backend em Go para uma plataforma de chat omnichannel baseada na API do WhatsApp em larga escala.",
+          "Construí um monolito resiliente em Go (hospedado via Heroku Containers com Docker) para processamento de Webhooks da Meta, integrando Firebase para autenticação/autorização multi-tenant, OpenAI para autoatendimento e Asaas para billing.",
+          "Projetei a camada de segurança com isolamento estrito de dados por empresa, RBAC (diferenciando acessos entre atendentes e administradores) e criptografia ponta a ponta para transações de cartão de crédito sem retenção de dados sensíveis no backend.",
+          "Desenvolvi o módulo monetizável da plataforma com sistema de créditos e assinaturas para controle fino de consumo das APIs da OpenAI e WhatsApp Meta.",
+          "Desenvolvi um serviço de WebSockets dedicado para tráfego e renderização de mensagens de chat em tempo real, desacoplando a entrega de eventos da camada de inteligência e persistência de dados.",
+          "Criei uma API de upload de arquivos customizada em VPS Linux integrada ao Cloudflare R2 para contornar limitações de tamanho do Heroku, encapsulando o provider e impedindo a exposição das URLs do storage para o frontend.",
+          "Iniciei o desenvolvimento de um sistema de gestão para PDV (Ponto de Venda) utilizando PostgreSQL.",
+          "Atuei na revisão de código backend e no suporte técnico à equipe de frontend com orientações sobre performance e consumo de APIs.",
+        ],
+      },
+      {
+        company: "I9si Sistemas",
+        role: "Desenvolvedor de Software",
+        period: "jul de 2023 – mar de 2026 · 2 anos e 9 meses",
+        location: "Caruaru, Pernambuco, Brasil",
+        skills: [
+          "Go (Golang)",
+          "Node.js",
+          "API REST",
+          "MongoDB",
+          "Google Cloud Platform (GCP)",
+          "Heroku",
+          "Linux",
+          "OpenAI API",
+          "WhatsApp Meta API",
+        ],
+        description: [
+          "Projetei e implementei APIs REST escaláveis utilizando Node.js e Go para sistemas de comunicação empresarial.",
+          "Desenvolvi uma plataforma web integrada à API oficial do WhatsApp (Meta), centralizando comunicação, agendamentos (Google Agenda) e fluxos de e-mail (Gmail via SMTP).",
+          "Implementei integração com a API da OpenAI utilizando fine-tuning para criação de assistentes inteligentes capazes de realizar triagem e atendimento automático baseado no treinamento específico de cada cliente.",
+          "Projetei um fluxo híbrido de atendimento onde a IA responde inicialmente e os operadores humanos podem assumir a conversa via interface web sem romper a experiência.",
+          "Gerenciei a hospedagem de microsserviços no Heroku e ambientes de infraestrutura no Google Cloud Platform (GCP) utilizando MongoDB como banco de dados principal.",
+        ],
+      },
+    ],
+    ecosystemLinks: "// Ecossistema & Links",
+  },
+  projects: {
+    heading: "Meus Projetos",
+    description: "Explore alguns dos meus desenvolvimentos recentes e ferramentas open-source.",
+    links: [
+      { title: "Repositórios GitHub", href: "https://github.com/gabrielluizsf?tab=repositories" },
+      { title: "Atendi9 Open Source", href: "https://github.com/orgs/atendi9/repositories" },
+      { title: "C test Library", href: "https://github.com/gabrielluizsf/assertx" },
+    ],
+  },
+  aboutLinks: [
+    { title: "Atendi9", href: "https://www.atendi9.com.br" },
+    { title: "Free Gophers", href: "https://github.com/egonelbre/gophers" },
+  ],
+}
+
+export default pt
