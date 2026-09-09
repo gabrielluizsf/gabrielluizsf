@@ -1,18 +1,17 @@
-import Image from "next/image";
 import Link from "next/link";
-import { SunIcon } from '@heroicons/react/24/solid'
-import { MoonIcon } from '@heroicons/react/24/outline'
+import { SunIcon } from '@heroicons/react/24/solid';
+import { MoonIcon } from '@heroicons/react/24/outline';
 import { useEffect, useState } from "react";
 import { useTheme } from 'next-themes';
 
 function NavBarItem({ link }) {
     return (
         <Link href={link.href}>
-            <p className="font-mono text-sm md:text-base font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors tracking-wide">
+            <p className="font-mono text-sm md:text-base font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors tracking-wide p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800">
                 {link.icon}
             </p>
         </Link>
-    )
+    );
 }
 
 const ThemeToggler = () => {
@@ -24,14 +23,14 @@ const ThemeToggler = () => {
 
   return (
     <button
-      className="p-2 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors"
+      className="p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       aria-label="Toggle Dark Mode"
     >
       {theme === 'light' ? (
-        <MoonIcon className="text-neutral-900 stroke-2 w-5 h-5 md:w-6 md:h-6" />
+        <MoonIcon className="text-neutral-800 stroke-2 w-5 h-5" />
       ) : (
-        <SunIcon className="text-neutral-50 stroke-2 w-5 h-5 md:w-6 md:h-6" />
+        <SunIcon className="text-neutral-200 stroke-2 w-5 h-5" />
       )}
     </button>
   );
@@ -39,25 +38,25 @@ const ThemeToggler = () => {
 
 function NavBar({ links }) {
     return (
-        <nav className="flex items-center justify-between py-4 mb-8 sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-neutral-900/70 border-b border-neutral-200 dark:border-neutral-800">
-            <Link href="/" className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border-2 border-neutral-200 dark:border-neutral-700 hover:opacity-80 transition-opacity">
-                <Image 
-                    src="https://github.com/gabrielluizsf.png" 
-                    alt="Gabriel Luiz" 
-                    fill
-                    sizes="(max-width: 768px) 40px, 48px"
-                    className="object-cover"
-                    priority
-                />
+        <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-3xl z-50 flex items-center justify-between px-6 py-3 backdrop-blur-md bg-white/70 dark:bg-neutral-900/60 border border-neutral-200/50 dark:border-neutral-700/50 shadow-sm rounded-2xl transition-colors">
+            <Link 
+                href="/" 
+                className="group flex items-center gap-2 font-mono text-base md:text-lg font-bold text-neutral-900 dark:text-neutral-50 tracking-tight"
+            >
+                <span className="text-neutral-400 dark:text-neutral-500 font-normal group-hover:text-neutral-900 dark:group-hover:text-neutral-50 transition-colors">~/</span>
+                <span>gabrielluizsf</span>
+                <span className="inline-block w-2 h-4 bg-neutral-900 dark:bg-emerald-500 animate-pulse ml-0.5"></span>
             </Link>
-            <div className="flex items-center space-x-4 md:space-x-8">
+            
+            <div className="flex items-center space-x-2 md:space-x-4">
                 {links.map((link, i) => {
-                    return <NavBarItem key={i} link={link} />
+                    return <NavBarItem key={i} link={link} />;
                 })}
+                <div className="h-5 w-[1px] bg-neutral-200 dark:bg-neutral-700 mx-2"></div>
                 <ThemeToggler />
             </div>
         </nav>
-    )
+    );
 }
 
 export default NavBar;
