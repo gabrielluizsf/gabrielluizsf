@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Links from '../components/Links'
 import { useTranslation } from '../context/LanguageContext'
+import { formatTotalExperience } from '../experiences/format'
 
 export default function AboutPage() {
   const { t } = useTranslation()
+  
+  const totalExp = formatTotalExperience(t.about.experiences, t.about.durationLabels);
 
   return (
     <>
@@ -26,9 +29,21 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
-          <h2 className="font-mono text-xs text-neutral-400 dark:text-neutral-600 uppercase tracking-wider mb-8">
-            {t.about.workExperience}
-          </h2>
+          
+          {/* Header da seção refatorado com a badge de tempo total */}
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="font-mono text-xs text-neutral-400 dark:text-neutral-600 uppercase tracking-wider">
+              {t.about.workExperience}
+            </h2>
+            
+            <div className="flex items-center gap-2 font-mono text-xs bg-neutral-100 dark:bg-neutral-800/60 text-neutral-600 dark:text-neutral-400 px-3 py-1 rounded-full border border-neutral-200 dark:border-neutral-700/50 shadow-sm transition-colors hover:border-neutral-300 dark:hover:border-neutral-600">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neutral-400 opacity-75 dark:bg-neutral-500"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-neutral-500 dark:bg-neutral-400"></span>
+              </span>
+              <span>{totalExp}</span>
+            </div>
+          </div>
 
           <div className="space-y-12">
             {t.about.experiences.map((exp, index) => (
