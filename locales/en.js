@@ -13,10 +13,45 @@ const en = {
     heading: "About me",
     bio: "I'm a developer focused on building robust and scalable backend solutions, specialized in high-performance ecosystems, clean architectures, and automation.",
     workExperience: "// Work Experience",
+    durationLabels: {
+      yearSingular: "year",
+      yearPlural: "years",
+      monthSingular: "month",
+      monthPlural: "months",
+      and: "and",
+    },
     experiences: [
+      {
+        company: "I9si Sistemas",
+        role: "Software Developer",
+        startDate: "2023-07",
+        endDate: "2026-03",
+        period: "Jul 2023 – Mar 2026 · 2 years and 9 months",
+        location: "Caruaru, Pernambuco, Brazil",
+        skills: [
+          "Go (Golang)",
+          "Node.js",
+          "REST API",
+          "MongoDB",
+          "Google Cloud Platform (GCP)",
+          "Heroku",
+          "Linux",
+          "OpenAI API",
+          "WhatsApp Meta API",
+        ],
+        description: [
+          "Designed and implemented scalable REST APIs using Node.js and Go for enterprise communication systems.",
+          "Developed a web platform integrated with the official WhatsApp API (Meta), centralizing communication, scheduling (Google Calendar), and email workflows (Gmail via SMTP).",
+          "Implemented integration with the OpenAI API using fine-tuning to create intelligent assistants capable of triage and automated service based on each client's specific training.",
+          "Designed a hybrid service flow where AI responds initially and human operators can take over the conversation via a web interface without breaking the experience.",
+          "Managed microservices hosting on Heroku and infrastructure environments on Google Cloud Platform (GCP) using MongoDB as the primary database.",
+        ],
+      },
       {
         company: "Atendi9",
         role: "Developer",
+        startDate: "2026-04",
+        endDate: "2026-09",
         period: "Apr 2026 – Sep 2026 · 6 months",
         location: "Caruaru, Pernambuco, Brazil (Hybrid)",
         skills: [
@@ -46,30 +81,6 @@ const en = {
           "Acted in backend code review and provided technical support to the frontend team with guidance on performance and API consumption.",
         ],
       },
-      {
-        company: "I9si Sistemas",
-        role: "Software Developer",
-        period: "Jul 2023 – Mar 2026 · 2 years and 9 months",
-        location: "Caruaru, Pernambuco, Brazil",
-        skills: [
-          "Go (Golang)",
-          "Node.js",
-          "REST API",
-          "MongoDB",
-          "Google Cloud Platform (GCP)",
-          "Heroku",
-          "Linux",
-          "OpenAI API",
-          "WhatsApp Meta API",
-        ],
-        description: [
-          "Designed and implemented scalable REST APIs using Node.js and Go for enterprise communication systems.",
-          "Developed a web platform integrated with the official WhatsApp API (Meta), centralizing communication, scheduling (Google Calendar), and email workflows (Gmail via SMTP).",
-          "Implemented integration with the OpenAI API using fine-tuning to create intelligent assistants capable of triage and automated service based on each client's specific training.",
-          "Designed a hybrid service flow where AI responds initially and human operators can take over the conversation via a web interface without breaking the experience.",
-          "Managed microservices hosting on Heroku and infrastructure environments on Google Cloud Platform (GCP) using MongoDB as the primary database.",
-        ],
-      },
     ],
     ecosystemLinks: "// Ecosystem & Links",
   },
@@ -86,6 +97,6 @@ const en = {
     { title: "Atendi9", href: "https://www.atendi9.com.br" },
     { title: "Free Gophers", href: "https://github.com/egonelbre/gophers" },
   ],
-}
+};
 
-export default en
+export default en;
