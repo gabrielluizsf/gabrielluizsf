@@ -54,6 +54,19 @@ export default function Terminal() {
     },
   }
 
+  // zsh-style autosuggestion: most recent typed command first, then the known commands
+  const candidates = [
+    ...history.filter((line) => line.kind === 'cmd').map((line) => line.text).reverse(),
+    ...Object.keys(commands),
+  ]
+  const suggestion = input ? candidates.find((c) => c.startsWith(input)) ?? '' : ''
+
+  function onInputKeyDown(event) {
+    if (event.key !== 'Tab' || event.shiftKey || !suggestion) return
+    event.preventDefault()
+    setInput(suggestion)
+  }
+
   function runCommand(event) {
     event.preventDefault()
     const raw = input.trim()
@@ -105,16 +118,25 @@ export default function Terminal() {
 
           <form onSubmit={runCommand} className="flex items-center gap-1.5">
             <span className="text-neutral-400 dark:text-neutral-600 shrink-0">{PROMPT}</span>
-            <input
-              ref={inputRef}
-              value={input}
-              onChange={(event) => setInput(event.target.value)}
-              className="flex-1 min-w-0 bg-transparent outline-none font-bold text-neutral-900 dark:text-neutral-50 caret-neutral-900 dark:caret-emerald-500"
-              autoComplete="off"
-              autoCapitalize="off"
-              spellCheck={false}
-              aria-label="terminal input"
-            />
+            <div className="relative flex-1 min-w-0">
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 font-bold whitespace-pre overflow-hidden text-neutral-400 dark:text-neutral-600 pointer-events-none"
+              >
+                {suggestion}
+              </span>
+              <input
+                ref={inputRef}
+                value={input}
+                onChange={(event) => setInput(event.target.value)}
+                onKeyDown={onInputKeyDown}
+                className="relative w-full bg-transparent outline-none font-bold text-neutral-900 dark:text-neutral-50 caret-neutral-900 dark:caret-emerald-500"
+                autoComplete="off"
+                autoCapitalize="off"
+                spellCheck={false}
+                aria-label="terminal input"
+              />
+            </div>
           </form>
         </div>
       </div>
