@@ -16,6 +16,11 @@ export default function Terminal() {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight
   }, [history])
 
+  // focus on mount: the terminal is the only thing on the page
+  useEffect(() => {
+    inputRef.current?.focus()
+  }, [])
+
   // command -> function(lines) returning the new history
   const commands = {
     help: (lines) => [
@@ -100,7 +105,15 @@ export default function Terminal() {
         </div>
       </div>
 
-      {file && <FilePopup file={file} onClose={() => setFile(null)} />}
+      {file && (
+        <FilePopup
+          file={file}
+          onClose={() => {
+            setFile(null)
+            inputRef.current?.focus()
+          }}
+        />
+      )}
     </>
   )
 }
