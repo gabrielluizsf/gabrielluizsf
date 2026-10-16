@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useTheme } from 'next-themes'
 import FilePopup from './FilePopup'
 
 const PROMPT = '~/gabrielluizsf $ '
@@ -7,12 +8,27 @@ const stack = 'go · node.js · typescript · javascript · mongodb · postgres 
 
 const helpRow = (cmd, desc) => `  ${cmd.padEnd(17)}${desc}`
 
+const THEME_OPTIONS = { '1': 'dark', '2': 'light', dark: 'dark', light: 'light' }
+
+const THEME_MENU = [
+  'select theme — options apply instantly:',
+  '',
+  '  1) dark',
+  '  2) light',
+  '',
+  "type 1 or 2 to preview · 'ok' to confirm · 'cancel' to revert",
+].join('\n')
+
 export default function Terminal() {
+  const { setTheme, theme } = useTheme()
   const [history, setHistory] = useState([{ kind: 'out', text: "type 'help' to list commands" }])
   const [input, setInput] = useState('')
   const [file, setFile] = useState(null)
+  const [pickingTheme, setPickingTheme] = useState(false)
   const inputRef = useRef(null)
   const scrollRef = useRef(null)
+  const themeBeforeRef = useRef(null)
+  const previewRef = useRef(null)
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight
@@ -38,6 +54,7 @@ export default function Terminal() {
           helpRow('cat stack.txt', 'show my stack'),
           helpRow('cat projects.md', 'open projects.md in a popup'),
           helpRow('cat about.md', 'open about.md in a popup'),
+          helpRow('select theme', 'dark/light via terminal'),
         ].join('\n'),
       },
     ],
@@ -52,6 +69,53 @@ export default function Terminal() {
       setFile('about.md')
       return [...lines, { kind: 'out', text: 'opening about.md — esc to close' }]
     },
+    'select theme': (lines) => {
+      themeBeforeRef.current = theme ?? 'system'
+      previewRef.current = null
+      setPickingTheme(true)
+      return [...lines, { kind: 'out', text: THEME_MENU }]
+    },
+  }
+
+  function closeSelection(lines, text) {
+    setPickingTheme(false)
+    return [...lines, { kind: 'out', text }]
+  }
+
+  function previewTheme(value, lines) {
+    previewRef.current = value
+    setTheme(value)
+    return [...lines, { kind: 'out', text: `preview: ${value} — 'ok' confirms, 'cancel' reverts` }]
+  }
+
+  const confirmTheme = (lines) => closeSelection(lines, `theme → ${previewRef.current ?? theme ?? 'system'}`)
+
+  const revertTheme = (lines) => {
+    setTheme(themeBeforeRef.current)
+    return closeSelection(lines, 'selection cancelled — theme reverted')
+  }
+
+  // answer -> function(lines) while the theme selector is open
+  const themeAnswers = {
+    '1': (lines) => previewTheme('dark', lines),
+    '2': (lines) => previewTheme('light', lines),
+    dark: (lines) => previewTheme('dark', lines),
+    light: (lines) => previewTheme('light', lines),
+    ok: confirmTheme,
+    enter: confirmTheme,
+    cancel: revertTheme,
+    esc: revertTheme,
+    q: revertTheme,
+  }
+
+  // typing an option flips the theme right away, before Enter
+  function onInputChange(value) {
+    setInput(value)
+    const preview = pickingTheme && THEME_OPTIONS[value.trim().toLowerCase()]
+    if (preview) {
+      previewRef.current = preview
+      setTheme(preview)
+    }
   }
 
   // zsh-style autosuggestion: most recent typed command first, then the known commands
@@ -74,11 +138,12 @@ export default function Terminal() {
     if (!raw) return
 
     const cmd = raw.toLowerCase().replace(/\/+$/, '').replace(/\s+/g, ' ')
-    const run = commands[cmd] ?? ((lines) => [
-      ...lines,
-      { kind: 'err', text: `command not found: ${raw} — try 'help'` },
-    ])
-    setHistory(run([...history, { kind: 'cmd', text: raw }]))
+    const lines = [...history, { kind: 'cmd', text: raw }]
+
+    const run = pickingTheme
+      ? themeAnswers[cmd] ?? ((ls) => [...ls, { kind: 'err', text: `invalid option: ${cmd} — type 1, 2, ok or cancel` }])
+      : commands[cmd] ?? ((ls) => [...ls, { kind: 'err', text: `command not found: ${raw} — try 'help'` }])
+    setHistory(run(lines))
   }
 
   return (
@@ -117,7 +182,9 @@ export default function Terminal() {
           )}
 
           <form onSubmit={runCommand} className="flex items-center gap-1.5">
-            <span className="text-neutral-400 dark:text-neutral-600 shrink-0">{PROMPT}</span>
+            <span className="text-neutral-400 dark:text-neutral-600 shrink-0">
+              {pickingTheme ? 'select theme? ' : PROMPT}
+            </span>
             <div className="relative flex-1 min-w-0">
               <span
                 aria-hidden="true"
@@ -128,7 +195,7 @@ export default function Terminal() {
               <input
                 ref={inputRef}
                 value={input}
-                onChange={(event) => setInput(event.target.value)}
+                onChange={(event) => onInputChange(event.target.value)}
                 onKeyDown={onInputKeyDown}
                 className="relative w-full bg-transparent outline-none font-bold text-neutral-900 dark:text-neutral-50 caret-neutral-900 dark:caret-emerald-500"
                 autoComplete="off"
