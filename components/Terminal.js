@@ -5,6 +5,8 @@ const PROMPT = '~/gabrielluizsf $ '
 
 const stack = 'go · node.js · typescript · javascript · mongodb · postgres · docker '
 
+const helpRow = (cmd, desc) => `  ${cmd.padEnd(17)}${desc}`
+
 export default function Terminal() {
   const [history, setHistory] = useState([{ kind: 'out', text: "type 'help' to list commands" }])
   const [input, setInput] = useState('')
@@ -25,7 +27,19 @@ export default function Terminal() {
   const commands = {
     help: (lines) => [
       ...lines,
-      { kind: 'out', text: 'commands: help · ls · clear · cat stack.txt · cat projects.md · cat about.md' },
+      {
+        kind: 'out',
+        text: [
+          'available commands:',
+          '',
+          helpRow('help', 'show this list'),
+          helpRow('ls', 'list available files'),
+          helpRow('clear', 'clear the terminal'),
+          helpRow('cat stack.txt', 'show my stack'),
+          helpRow('cat projects.md', 'open projects.md in a popup'),
+          helpRow('cat about.md', 'open about.md in a popup'),
+        ].join('\n'),
+      },
     ],
     ls: (lines) => [...lines, { kind: 'out', text: 'projects.md  about.md  stack.txt' }],
     clear: () => [],
