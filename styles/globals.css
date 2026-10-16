@@ -5,3 +5,18 @@
 html {
     scroll-behavior: smooth;
 }
+
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animate-pop-in {
+    animation: pop-in 0.18s ease-out;
+}
